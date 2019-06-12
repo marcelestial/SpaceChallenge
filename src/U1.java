@@ -40,11 +40,11 @@ public class U1 extends Rocket {
 
         System.out.println("Cargo: " + getCurrentWeight());
         if (chanceLaunched >= rand) {
-            System.out.println("U1 EXPLODED!!!");
-            System.out.println("...Sending another rocket because it exploded...");
+            System.out.println("!U1 EXPLODED!");
+            System.out.println("Sending another to replace the exploded rocket...");
             return false;
         } else {
-            System.out.println("U1 launched successfully!");
+            System.out.println("Congration! U1 launched successfully!");
             return true;
         }
     }
@@ -57,11 +57,11 @@ public class U1 extends Rocket {
         chanceLanded = 0.01 * getTotalWeight() / getMaxCargo();
 
         if (chanceLanded >= rand) {
-            System.out.println("U1 CRASHED!!!");
-            System.out.println("...Sending another rocket because it crashed...");
+            System.out.println("!U1 CRASHED!");
+            System.out.println("Sending another to replace the crashed rocket...");
             return false;
         } else {
-            System.out.println("U1 landed successfully!");
+            System.out.println("Cognration! U1 landed successfully!");
             return true;
         }
     }
